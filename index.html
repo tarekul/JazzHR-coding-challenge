@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JazzHR candidate hiring workflow status</h1>
+      <h3>Select date to gather candidate data</h3>
+      <div class="field">
+        <input class="date-field" type="date" />
+        <input class="search-button" type="button" value="search" />
+      </div>
+
+      <table class="tble">
+        <tr>
+          <th>Status</th>
+          <th>Count</th>
+        </tr>
+        <tr>
+          <td>New</td>
+          <td id="new">0</td>
+        </tr>
+        <tr>
+          <td>Screening</td>
+          <td id="screening">0</td>
+        </tr>
+        <tr>
+          <td>Interview</td>
+          <td id="interview">0</td>
+        </tr>
+        <tr>
+          <td>Offer</td>
+          <td id="offer">0</td>
+        </tr>
+        <tr>
+          <td>Hired</td>
+          <td id="hired">0</td>
+        </tr>
+        <tr>
+          <td>Not Hired</td>
+          <td id="notHired">0</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-base64@3.5.2/base64.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
